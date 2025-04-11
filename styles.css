@@ -52,7 +52,7 @@ nav ul li a:hover {
 main {
     padding: 20px;
     max-width: 1200px;
-    min-height: 70vh;
+    min-height: 85vh;
     margin: auto;
 }
 
@@ -114,16 +114,71 @@ p {
 }
 
 .image-gallery {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
+    align-items: center;
     margin-top: 20px;
 }
 .image-item {
     text-align: center;
     margin: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 400px 50px;
 }
 .image-item img {
     max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.contact-form {
+    background-color: #af969698;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
 }
