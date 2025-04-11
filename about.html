@@ -25,24 +25,42 @@
 
     <main>
         <h2>About Us / Contact Us</h2>
-        <p>We are dedicated to providing the best remote-controlled fishing robots. For inquiries, please contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
     
-        <h3>Our Products</h3>
         <div class="image-gallery">
             <div class="image-item">
-                <img src="image1.jpg" alt="Fishing Robot 1">
+                <img src="images/james.png" alt="James">
                 <p>This is James, an expert in CSS and styles the whole shabang.</p>
             </div>
             <div class="image-item">
-                <img src="image2.jpg" alt="Fishing Robot 2">
+                <img src="images/gavin.PNG" alt="Gavin">
                 <p>Say hi to Gavin, an HTML and GitHub master.</p>
             </div>
             <div class="image-item">
-                <img src="image3.jpg" alt="Fishing Robot 3">
-                <p>This is Jaiden, a guru of team management and Full Stack Engineering.</p>
+                <img src="images/jaiden.PNG" alt="Jaiden">
+                <p>This is Jayden, a guru of team management and Full Stack Engineering.</p>
             </div>
         </div>
+        <div>
+            <hr>
+           <p>We are dedicated to providing the best remote-controlled fishing robots. For inquiries, please contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+        </div>
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" >
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" ></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </main>
+    
 
     <footer>
         <p>&copy; 2023 Fishing Remote Controlled Robot. All rights reserved.</p>
